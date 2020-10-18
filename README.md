@@ -47,7 +47,7 @@ git clone https://github.com/dddtqshmpmz/PDX.git
 2. Pre-process data.
    + We randomly resample the data from the original dataset (`original_data.csv`) and generate 100 datasets which are saved in `/tmpData100` directory. We do not provide the datasets due to data privacy.
 3. Use different machine learning methods (CatBoost, XGBoost, SVM and LR) to train the PDX prediction models.
-   + `python classify_with_smote.py`  Train and test different models with or without SMOTE. The mean scores (AUC, precision, recall, accuracy and F1-score) of different models are saved in `/score` and `/scoreWithDifferentFeatures` directories.
+   + `python classify_with_smote.py`  Train and test different models with or without SMOTE. The mean scores (AUC, precision, recall, accuracy and F1-score) of different models are saved in `/score` directory.
    + `python cross_validation.py`  Use K-fold cross validation to get classification scores of train/val/test datasets.
    + `python ensemble_learning.py`  Integrate multiple models to get final test scores.
    + You can see some results based on different models with different feature selections in `/scoreWithDifferentFeatures` directory.
